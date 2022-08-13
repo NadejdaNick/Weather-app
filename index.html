@@ -11,7 +11,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
@@ -19,9 +19,10 @@
     ></script>
     <script src="https://kit.fontawesome.com/217586cb2a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
        <div class="weather-app">
@@ -56,7 +57,8 @@
             <br />
             <h1 id="city"><strong>Kyiv</strong></h1>
             <h2 id="date">Saturday 19:03</h2>
-             <div class="row">
+            <h3 id="description"></h3>                 
+            <div class="row">
             <div class="col-6">
               <div class="d-flex weather-temperature">
                 <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="Clear" id="icon" />
@@ -68,8 +70,8 @@
             </div>
             <div class="col-6">
               <ul>
-                <li>Humidity: <span class="amount">60</span><span id="humidity"></span>%</li>
-                <li>Wind: <span class="amount">1</span><span id="wind"></span>m/h</li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span>m/h</li>
               </ul>
             </div>
           </div>

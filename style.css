@@ -18,12 +18,21 @@ h2 {
   font-size: 35px;
   line-height: 26px;
 }
+h3 {
+  font-size: 15px;
+  font-style: italic;
+}
 li {
   list-style: none;
   color: rgb(11, 11, 11);
   font-size: 18px;
   line-height: 19px;
-  font-weight: 100;
+
+  font-style: italic;
+}
+.amount {
+  font-weight: bold;
+  color: red;
 }
 .weather-temperature img {
   margin-right: 5px;
