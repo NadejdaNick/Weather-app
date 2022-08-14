@@ -5,7 +5,15 @@
   border: 1px solid #dadde1;
   border-radius: 5px;
   font-family: "Poppins", sans-serif;
-  background-color: rgb(201, 198, 198);
+  background: linear-gradient(
+    99.6deg,
+    rgb(112, 128, 152) 10.6%,
+    rgb(242, 227, 234) 32.9%,
+    rgb(234, 202, 213) 52.7%,
+    rgb(220, 227, 239) 72.8%,
+    rgb(185, 205, 227) 81.1%,
+    rgb(154, 180, 212) 102.4%
+  );
 }
 h1 {
   color: #25161b;
@@ -30,10 +38,7 @@ li {
 
   font-style: italic;
 }
-.amount {
-  font-weight: bold;
-  color: red;
-}
+
 .weather-temperature img {
   margin-right: 5px;
   height: 64px;
@@ -49,4 +54,7 @@ li {
   position: relative;
   font-size: 16px;
   top: -34px;
+}
+small {
+  text-align: center;
 }
