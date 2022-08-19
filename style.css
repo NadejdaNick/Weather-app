@@ -58,3 +58,13 @@ li {
 small {
   text-align: center;
 }
+.weather-forecast {
+  margin-top: 25px;
+  text-align: center;
+}
+.date-forecast {
+  font-size: 14;
+}
+.forecast-temperature {
+  font-size: 12;
+}

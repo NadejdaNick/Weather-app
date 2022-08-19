@@ -22,6 +22,30 @@ function formatDate(date) {
 
   return `${day} ${hours}:${minutes}`;
 }
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon", "Tue", "Wed"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+              <div class="row">
+                <div class="col-2">
+                  <div class="date-forecast">${day}</div>
+                  <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="" width="36" />
+                  <div class="forecast-temperature"> 
+                    <span class="forecast-temperature-max">25°C</span>
+                    <span class="forecast-temperature-min">25°C</span>
+                  </div>
+                </div>
+   </div>
+    `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
 
 function displayWeatherCondition(response) {
   console.log(response.data);
@@ -30,6 +54,7 @@ function displayWeatherCondition(response) {
   let descriptionElement = document.querySelector("#description");
   let windElement = document.querySelector("#wind");
   let humidityElement = document.querySelector("#humidity");
+
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
@@ -67,3 +92,4 @@ dateElement.innerHTML = formatDate(currentTime);
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
 searchCity("Kiev");
+displayForecast();
